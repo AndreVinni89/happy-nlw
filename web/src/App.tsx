@@ -1,33 +1,14 @@
 import React from 'react';
 
-import './styles/global.css'
-import './styles/pages/landing.css'
 
-import { FiArrowRight } from 'react-icons/fi'
+// IMPORTA O ARQUIVO DE ROTAS PARA DEFINIR O ROTEAMENTO
+import Routes from './routes'
 
-import logoImg from './img/Logo.svg'
 
+// FUNÇÃO QUE É CHAMADA PELA INDEX AO RENDERIZAR A PAGINA
 function App() {
     return (
-        <div id="page-landing">
-            <div className="content-wrapper">
-                <img src={logoImg} alt="Happy" />
-                <main>
-                    <h1>Leve felicidade para o mundo</h1>
-                    <p>Visite orfanatos e mude o dia de muitas crianças.</p>
-                </main>
-                <div className="location">
-                    <strong>Lapa</strong>
-                    <span>Parana</span>
-                </div>
-
-
-                <a href="" className="enter-app">
-                    <FiArrowRight size={26} color="rgba(0, 0, 0, 0.6)" />
-                </a>
-
-            </div>
-        </div>
+        <Routes />
     );
 }
 
